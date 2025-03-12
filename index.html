@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card_buttons">
+                <button onclick="formatText('bold')">B</button>
+                <button onclick="formatText('italic')">I</button>
+                <button onclick="formatText('underline')">U</button>
+                <button onclick="formatText('justifyLeft')">Left</button>
+                <button onclick="formatText('justifyCenter')">Center</button>
+                <button onclick="formatText('justifyRight')">Right</button>
+                <input type="color" id="color">
+                <input type="file" id="file">
+                <button onclick="downloadHTML()" class="download">Download <br>HTML</button>
+            </div>
+
+            <div id="editor" class="editor" contenteditable="true"></div>
+            <div id="header">
+                <img src="C:\fakepath\Снимок экрана 2025-03-10 181439.png" alt="">
+            </div>
+            <div id="footer" contenteditable="true"></div>
+
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

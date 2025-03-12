@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+
+.card_buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(0, 106, 255);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card {
+    border-radius: 20px;
+    height: fit-content;
+    box-shadow: 0px 0px 50px rgba(1, 139, 252, 0.788);
+}
+
+.card_buttons button {
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+input {
+    width: 70px;
+    height: 50px;
+}
+
+.download {
+    width: 100px;
+}
+
+.editor {
+    height: 100px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(1, 139, 252, 0.788);
+}
+
+#header {
+    height: 250px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(1, 139, 252, 0.788);
+
+}
+
+#footer {
+    height: 100px;
+    padding: 20px;
+    align-items: center;
+
+}
