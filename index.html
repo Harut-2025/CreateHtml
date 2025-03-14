@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <div class="card">
+        <div class="cards">
             <div class="card_buttons">
                 <button onclick="formatText('bold')">B</button>
                 <button onclick="formatText('italic')">I</button>
@@ -18,15 +18,35 @@
                 <button onclick="formatText('justifyCenter')">Center</button>
                 <button onclick="formatText('justifyRight')">Right</button>
                 <input type="color" id="color">
-                <input type="file" id="file">
+                <button onclick="document.getElementById('imageInput').click()" class="nkar"><svg width="36" height="36"
+                        viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.758 4.75801C3 6.51451 3 9.34351 3 15V21C3 26.6565 3 29.4855 4.758 31.242C6.516 32.9985 9.3435 33 15 33H21C26.6565 33 29.4855 33 31.242 31.242C32.9985 29.484 33 26.6565 33 21V15C33 10.74 33 8.08501 32.25 6.28351V25.5C31.5369 25.5001 30.8307 25.3598 30.1719 25.0869C29.513 24.8141 28.9143 24.4142 28.41 23.91L27.282 22.782C26.199 21.699 25.659 21.159 25.0455 20.931C24.3711 20.6802 23.6289 20.6802 22.9545 20.931C22.341 21.159 21.7995 21.699 20.7195 22.782L20.5485 22.9515C19.671 23.829 19.2315 24.2685 18.765 24.3495C18.4027 24.4134 18.0295 24.3418 17.7165 24.1485C17.3145 23.8995 17.07 23.328 16.5795 22.1865L16.5 22.0005C15.375 19.3755 14.814 18.0645 13.833 17.5725C13.339 17.3248 12.7862 17.2184 12.2355 17.265C11.142 17.358 10.134 18.3675 8.115 20.385L5.25 23.25V4.33051C5.076 4.45951 4.912 4.60201 4.758 4.75801Z"
+                            fill="white" />
+                        <path
+                            d="M4.5 15C4.5 12.129 4.503 10.1265 4.707 8.616C4.9035 7.149 5.265 6.372 5.817 5.8185C6.372 5.2635 7.149 4.9035 8.616 4.707C10.1265 4.503 12.129 4.5 15 4.5H21C23.871 4.5 25.8735 4.503 27.384 4.707C28.851 4.9035 29.628 5.265 30.1815 5.817C30.7365 6.372 31.0965 7.149 31.2945 8.616C31.497 10.1265 31.5 12.129 31.5 15V21C31.5 23.871 31.497 25.8735 31.2945 27.384C31.0965 28.851 30.735 29.628 30.1815 30.1815C29.628 30.7365 28.851 31.0965 27.384 31.2945C25.8735 31.497 23.871 31.5 21 31.5H15C12.129 31.5 10.1265 31.497 8.616 31.2945C7.149 31.0965 6.372 30.735 5.8185 30.1815C5.2635 29.628 4.9035 28.851 4.707 27.384C4.503 25.8735 4.5 23.871 4.5 21V15Z"
+                            stroke="white" stroke-width="2" />
+                        <path
+                            d="M22.5 16.5C24.1569 16.5 25.5 15.1569 25.5 13.5C25.5 11.8431 24.1569 10.5 22.5 10.5C20.8431 10.5 19.5 11.8431 19.5 13.5C19.5 15.1569 20.8431 16.5 22.5 16.5Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <input type="file" id="imageInput" style="display: none;" accept="image/*" onchange="insertImage(event)">
+
                 <button onclick="downloadHTML()" class="download">Download <br>HTML</button>
+                <button onclick="insertCard()">Insert <br>Card</button>
+                <button onclick="menu()">Menu</button>
+                <button onclick="footerContent()">Footer</button>
             </div>
 
             <div id="editor" class="editor" contenteditable="true"></div>
-            <div id="header">
-                <img src="C:\fakepath\Снимок экрана 2025-03-10 181439.png" alt="">
-            </div>
+            <div id="header" contenteditable="true"> </div>
             <div id="footer" contenteditable="true"></div>
+            <div id="control">
+                <input type="number" id="width" style="width: 60px; height: 20px; margin-top: 10px;">
+                <input type="number" id="height" style="width: 60px; height: 20px;">
+
+            </div>
 
         </div>
     </div>
@@ -34,4 +54,4 @@
     <script src="./js/main.js"></script>
 </body>
 
-</html>
+</html
